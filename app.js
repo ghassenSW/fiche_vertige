@@ -1,0 +1,51 @@
+const checkboxes = document.querySelectorAll('.other_check');
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener('change', function () {
+    const targetId = this.getAttribute('data-target'); // Get the ID of the corresponding question
+    const targetElement = document.getElementById(targetId);
+
+    if (this.checked) {
+      targetElement.classList.remove('hidden'); // Show the question
+    } else {
+      targetElement.classList.add('hidden'); // Hide the question
+    }
+  });
+});
+
+function updateMainChoice(otherChoiceInput,id) {
+  const mainChoice = document.getElementById(id);
+  console.log(otherChoiceInput,mainChoice)
+  if (otherChoiceInput.trim()) {
+    mainChoice.value = otherChoiceInput;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener("load", function() {
+    const form = document.getElementById('dynamicForm');
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      })
+      .then(() => {
+        alert("Success!");
+      })
+    });
+  });
+
+
