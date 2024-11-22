@@ -21,31 +21,29 @@ function updateMainChoice(otherChoiceInput,id) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 window.addEventListener("load", function() {
     const form = document.getElementById('dynamicForm');
     form.addEventListener("submit", function(e) {
       e.preventDefault();
-      const data = new FormData(form);
-      const action = e.target.action;
-      fetch(action, {
-        method: 'POST',
-        body: data,
-      })
-      .then(() => {
-        alert("Success!");
-      })
+    const names=new Set()
+    Array.from(form.elements).forEach((element) => {
+      if (element.name) {
+        names.add(element.name)
+      }
     });
+    const data = new FormData(form);
+    for (let iter of names){
+      const name_tab = data.getAll(iter);
+      const name_string = name_tab.join(', ');
+      data.set(iter, name_string);
+    }
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
   });
-
-
+});
