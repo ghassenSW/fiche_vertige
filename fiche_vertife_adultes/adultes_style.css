@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3f1d3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    box-sizing: border-box; 
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #046d08, #81C784);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+h3 {
+    text-align: center;
+    color: #1b5e20;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.form-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(41, 255, 8, 0.966);
+    padding: 20px;
+    width: 90%;
+    max-width: 550px;
+    box-sizing: border-box; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+label {
+    display: block;
+    margin: 5px 0;
+  }
+select, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+input{
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; 
+}
+input[type="text"]{
+    margin-top: 5px;
+}
+input[type="checkbox"],input[type="radio"] {
+    width:10%
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+th, td {
+    border: 1px solid rgb(2, 105, 14);
+    padding: 1px;
+    text-align: center;
+}
+th {
+    background-color: #ccffd3;
+}
+table input[type="number"] {
+    width: 80%;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+}
+.table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+    box-shadow: 1px 2px 4px rgba(44, 212, 19, 0.966);
+  }
