@@ -39,13 +39,13 @@ This project is a web-based form system built for a doctor to collect and manage
 
 ## 📌 Live Demo
 
-👉 https://fiche-vertige-1z7axkl7z-ghassensws-projects.vercel.app/
+👉 https://fiche-vertige.vercel.app/
 
 ## 🖼️ Form Screenshot
 
 Here is a preview of the form:
 
-![Form Screenshot](public/form.png)
+![Form Screenshot](images/form.png)
 
 
 ## 🚀 Deployment
