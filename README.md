@@ -70,5 +70,5 @@ This project is for demonstration and private client use. Not intended for comme
 
 ## 👨‍⚕️ Author
 
-Built with care for clinical usability by [Your Name].
+Built with care for clinical usability by Ghassen Ben Hmida.
 
