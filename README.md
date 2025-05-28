@@ -41,12 +41,12 @@ This project is a web-based form system built for a doctor to collect and manage
 
 👉 https://fiche-vertige-1z7axkl7z-ghassensws-projects.vercel.app/
 
-## 📸 Screenshots
+## 🖼️ Form Screenshot
 
-You can include screenshots like:
-- Full-page form preview
-- Dynamic inputs in action
-- Example Google Sheet view
+Here is a preview of the form:
+
+![Form Screenshot](public/form.png)
+
 
 ## 🚀 Deployment
 
